@@ -67,7 +67,7 @@
 ## 📎 Посилання
 
 - 🔗 [Репозиторій з кодом](https://github.com/Tetiana-co/goit-js-hw-07.git)
-- 🔗 [Жива сторінка на GitHub Pages](https://ТВОЄ_ІМ_Я.github.io/goit-js-hw-07/)
+- 🔗 [Жива сторінка на GitHub Pages](https://tetiana-co.github.io/goit-js-hw-07/)
 
 ---
 
