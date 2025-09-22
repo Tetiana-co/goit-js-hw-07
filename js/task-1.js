@@ -1,9 +1,13 @@
-// Порахуємо категорії
-const items = document.querySelectorAll('#categories .item');
-console.log(`Number of categories: ${ulCategoriesList.length}`);
+// Знаходимо всі категорії (li.item) усередині ul#categories
+const categoryItems = document.querySelectorAll('#categories .item');
 
-// Для кожної категорії виведемо назву та кількість елементів
-ulCategoriesList.forEach(ulCategoriesItem => {
-  console.log(`Category: ${ulCategoriesItem.childNodes[1].textContent}`);
-  console.log(`Elements: ${ulCategoriesItem.childNodes[3].children.length}`);
+console.log(`Number of categories: ${categoryItems.length}`);
+
+// Для кожної категорії дістаємо <h2> і всі <li> всередині вкладеного <ul>
+categoryItems.forEach(categoryItem => {
+  const titleEl = categoryItem.querySelector('h2');
+  const elementsCount = categoryItem.querySelectorAll('ul > li').length;
+
+  console.log(`Category: ${titleEl.textContent.trim()}`);
+  console.log(`Elements: ${elementsCount}`);
 });
